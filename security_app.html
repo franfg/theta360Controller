@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta charset='utf-8'>
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/jquery-ui.css">
+		<link rel="stylesheet" href="css/estilo.css">
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Pacifico" rel="stylesheet">
+		<script src="js/jquery-1.12.4.js"></script>
+		<script src="js/jquery-ui.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/three_r75.min.js"></script>
+		<script src="js/OrbitControls.js"></script>
+		
+		<title>360 Guard</title>
+	</head>
+
+	<body style="margin: 0px; padding:0px;">
+		
+		<div id="title" style="position:absolute; top: 0px; left:0px; width:100%; ">
+			<h1>360 Guard <img src="logo.jpg" style="width:80px; height: 80px;"/></h1>
+		</div>
+		
+		<!-- Contenedor de los controles 1 -->
+		<div id="controlVideo" style="opacity: 0.9; padding: 2px;">
+				<select id="selectSalida" name="selectSalida">
+					<option id="firstSM1">Seleccione una salida de video</option>
+				</select>
+				
+				<div id="hideB" style="display:inline-block;">
+					<label id="cb1lbl" for="checkbox-1">Esconder controles</label>
+					<input type="checkbox" name="checkbox-1" id="checkbox-1">
+				</div>
+		</div>
+		<!-- Contenedor de los controles 2 -->
+		<div id="controlesVid" style="position:relative; top:35px; left:4px; opacity: 0.9; padding: 2px;display:inline-block;">
+				<select id="selectController" name="selectController">
+					<option id="firstSM2">Seleccione una pantalla</option>
+				</select>
+				<select id="selectMapping" name="selectMapping">
+					<option id="firstSM3">Seleccione un metodo de mapeo</option>
+					<option>Esferico Cuadrangular</option>
+					<option>Esferico Ojo de pez</option>
+					<option>Plano</option>
+				</select>
+				
+				<div id="sliderCont" style="width:200px; margin-left:10px; display:inline-block;">
+				<label>Zoom:</label>
+				<div id="slider" >
+					<div id="custom-handle" class="ui-slider-handle"></div>
+				</div>
+				</div>
+		</div>
+		
+		<!-- Contenedores de la salida de video  -  Aqui se pueden crear tantos divs, como pantallas queramos, el id debe comenzar con 'container' y seguir con el angulo de visualización deseado -->
+		<div id="container90" class="contenedor" style="position:absolute; top: 130px; left:50px; width:38%; height: 38%;"></div>
+		<div id="container180" class="contenedor" style="position:absolute; top: 130px; left:50%; width:38%; height: 38%;"></div>
+		<div id="container270" class="contenedor" style="position:absolute; top: 59%; left:50px; width:38%; height: 38%;"></div>
+		<div id="container360" class="contenedor" style="position:absolute; top: 59%; left:50%; width:38%; height: 38%;"></div>
+		
+		<!-- Scripts utilizados -->
+		<script src="js/camera_controller.js"></script>
+		<script src="js/theta_controls.js"></script>
+	</body>
+</html>

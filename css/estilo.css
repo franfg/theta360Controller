@@ -1,0 +1,31 @@
+body {
+	background-color: #fff;
+	margin: 0px;
+	overflow: hidden;
+}
+h1{
+	text-align: center;
+	font-family: 'Pacifico', cursive;
+	font-weight: 500;
+	font-size: 50px;
+}
+.contenedor{
+	border-style: solid;
+	border-width: 5px;
+	border-color: #568ab2;
+	margin: -5px;
+}
+.contenedorS{
+	border-style: solid;
+	border-width: 5px;
+	border-color: #b2565f;
+	margin: -5px;
+}
+#custom-handle {
+	width: 2.4em;
+	height: 1.4em;
+	top: 50%;
+	margin-top: -.6em;
+	text-align: center;
+	line-height: 1.2em;
+}
